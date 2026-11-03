@@ -1,0 +1,21 @@
+[project]
+name = "commute"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Saloni Samant", email = "58102967+saloni-11@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "gtfs-realtime-bindings>=3.0.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+commute = "commute:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
